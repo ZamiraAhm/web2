@@ -1,8 +1,6 @@
-
+/*
 body {
     font-family: "Times New Roman", Georgia, Serif;
-    margin: 0 auto;
-    width: 100%;  
   }
   h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display";
@@ -21,7 +19,7 @@ body {
   /*.display-container{
     position: relative;
   }*/
-  .img{
+  /*.img{
     width: auto;
     height: 3%;
     object-fit: contain;
@@ -45,13 +43,17 @@ body {
     background-color: #c29e31;
     color: #333;
   }*/
-  
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
   .logo{
     color: #333;
     text-decoration: none;
     display: flex;
     align-items: center;
-    text-decoration: none;
   }
   .logo i{
     color: rgb(218, 172, 114);
@@ -65,10 +67,18 @@ body {
   }
 
   .navbar{
-    display: flex;
-    list-style-type: none;
     justify-content: center;
-    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar li{
+    margin: 0 20px;
+  }
+  .main a:not(.user) {
+    margin-left: 20px;
   }
   .navbar a{
     color: var(--text-color);
@@ -133,10 +143,10 @@ body {
     
   }
   
-  .display-bottomleft{
+  /*.display-bottomleft{
     position: absolute; /* Make the text a positioned element */
-    left: 10px; /* Position the text 10 pixels from the left of the container */
-    z-index: 1;
+    /*left: 10px; /* Position the text 10 pixels from the left of the container */
+    /*z-index: 1;
     color: white;
     bottom: 10px;
     left: 10px;
@@ -179,12 +189,12 @@ body {
   
   .menutext ul{
       list-style: none; /* Remove the default list styling */
-  }
+ /* }
    
   .menu li {
     display: inline-block;  /* Display the list items as inline blocks */
-    margin-right: 10px;  /* Add space between the list items */
-  }
+   /* margin-right: 10px;  /* Add space between the list items */
+  /*}
   
   .menutext li{
     color: rgb(128, 128, 128);
@@ -230,7 +240,7 @@ body {
   
   /*contact*/
   
-  .contactus {
+  /*.contactus {
     font-size: 14px;
     text-align: left;
     margin-bottom: 20px;
@@ -247,7 +257,7 @@ body {
   
   /*form*/
   
-  form {
+  /*form {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -293,7 +303,7 @@ body {
    
   /*footer*/
   
-  footer {
+  /*footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
