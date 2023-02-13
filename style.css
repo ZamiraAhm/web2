@@ -49,6 +49,7 @@ body {
     align-items: center;
     padding: 20px;
     background-color: rgb(220, 166, 86);
+    height: 50px;
   }
   .logo{
     color: #ffffff;
@@ -141,7 +142,12 @@ body {
     float: right;
     margin: 10px;
     padding-left: 50px;
-    
+  }
+  @media(max-width:1280px){
+    header{
+      padding: 14px 2%;
+      transition: .2s;
+    }
   }
   
   /*.display-bottomleft{
@@ -258,7 +264,7 @@ body {
   
   /*form*/
   
-  /*form {
+  form {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -298,21 +304,20 @@ body {
     width: 100%;
   }
   button:hover{
-    background-color: #c29e31;
+    background-color: rgb(220, 166, 86);
     border: 2px solid rgb(0, 0, 0);
   }
    
   /*footer*/
   
-  /*footer {
+  footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #c29e31;
+    background-color: rgb(220, 166, 86);;
     color: rgb(3, 3, 3);
-    padding: 1rem;
-    padding-left: 1000px;
-    width: 100%;
+    padding: 20px;
+    height: 50px;
   }
   
   
