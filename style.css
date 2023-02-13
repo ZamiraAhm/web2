@@ -148,8 +148,29 @@ body {
       padding: 14px 2%;
       transition: .2s;
     }
+    .navbar a{
+      padding: 5px 0;
+      margin: 0px 20px;
+    }
   }
-  
+  @media(max-width:1090px){
+    #menu-icon{
+      display: block;
+    }
+    .navbar{
+      position: absolute;
+      top: 100%;
+      right: 2%;
+      width: 270px;
+      height: 29vh;
+      background: rgb(220, 166, 86);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      border-radius: 10px;
+      transition: all .50s ease;
+    }
+  }
   /*.display-bottomleft{
     position: absolute; /* Make the text a positioned element */
     /*left: 10px; /* Position the text 10 pixels from the left of the container */
