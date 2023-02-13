@@ -1,0 +1,242 @@
+
+body {
+    font-family: "Times New Roman", Georgia, Serif;
+    margin: 0 auto;
+    width: 100%;  
+  }
+  h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+  }
+  .bar{
+    letter-spacing: 4px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  
+  }
+  
+  .display-container{
+    position: relative;
+  }
+  .img{
+    width: auto;
+    height: 3%;
+    object-fit: contain;
+  }
+  .content{
+    max-width: 1100px;
+    padding-top: 40px;
+    padding-right: 20px;
+  }
+  
+  .menu{
+    width: 100%;
+  }
+  
+  .top{
+    text-align: left;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c29e31;
+    color: #333;
+  }
+  
+  .bar-item-btn{
+    color: black;
+    text-align: right;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .klasa1 {
+    display: flex;
+    align-items: right;
+  }
+  
+  .about{
+    width: 600px;
+    height: 600px;
+    float: right;
+    margin: 10px;
+    padding-left: 50px;
+    
+  }
+  
+  .display-bottomleft{
+    position: absolute; /* Make the text a positioned element */
+    left: 10px; /* Position the text 10 pixels from the left of the container */
+    z-index: 1;
+    color: white;
+    bottom: 10px;
+    left: 10px;
+    font-size: 3em;
+    display: flex;
+    color: lightgray;
+    font-family:sans-serif;
+  }
+  
+  hr {
+    width: 150%;
+    clear: both;
+    margin-top: 40px;
+  }
+  
+  
+  .row-padding{
+    display: flex;
+    padding-top: 10px;
+    padding-left: 40px;
+  }
+  
+  .image{
+  margin-right: 30px;
+  }
+  
+  .menu {
+    width: 50%;
+    height: 600px;
+    align-items: left;
+    padding-top: 90px;
+    padding-left: 30px;
+  }
+  .menutext {
+    width: 50%;
+    text-align: right;
+    padding-left: 100px;
+  }
+  
+  
+  .menutext ul{
+      list-style: none; /* Remove the default list styling */
+  }
+   
+  .menu li {
+    display: inline-block;  /* Display the list items as inline blocks */
+    margin-right: 10px;  /* Add space between the list items */
+  }
+  
+  .menutext li{
+    color: rgb(128, 128, 128);
+  }
+  
+  .center{
+    padding-top: 40x;
+  }
+  
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c29e31;
+    color: #333;
+  }
+  
+  .bar-item-btn:hover{
+    background-color: rgb(218, 197, 114);
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  
+  nav li {
+    margin: 0 20px;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px;
+    border: 1px solid #333;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  /*contact*/
+  
+  .contactus {
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 20px;
+   
+  }
+  
+  .contact {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+    background-color: lightgray;
+  }
+  
+  /*form*/
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  label {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="date"],
+  input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    width: 100%;
+  }
+  button:hover{
+    background-color: #c29e31;
+    border: 2px solid rgb(0, 0, 0);
+  }
+   
+  /*footer*/
+  
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c29e31;
+    color: rgb(3, 3, 3);
+    padding: 1rem;
+    padding-left: 1000px;
+    width: 100%;
+  }
+  
+  
+  
