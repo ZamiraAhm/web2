@@ -48,15 +48,16 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    background-color: rgb(220, 166, 86);
   }
   .logo{
-    color: #333;
+    color: #ffffff;
     text-decoration: none;
     display: flex;
     align-items: center;
   }
   .logo i{
-    color: rgb(218, 172, 114);
+    color: rgb(250, 250, 250);
     font-size: 28px;
     margin-left: 100px;
   }
@@ -90,10 +91,10 @@ body {
     text-decoration: none;
   }
   .navbar a:hover{
-    color:rgb(218, 172, 114) ;
+    color:rgb(241, 241, 241) ;
   }
   .navbar a.bar-item-btn{
-    color:rgb(218, 172, 114) ;
+    color:rgb(255, 253, 253) ;
   }
   
   .main{
@@ -116,11 +117,11 @@ body {
     align-items: center;
   }
   .user i{
-    color:rgb(218, 172, 114) ;
+    color:rgb(255, 255, 255) ;
     font-size: 20px;
   }
   .main a:hover{
-    color:rgb(218, 172, 114) ;
+    color:rgb(255, 251, 251) ;
   }
   #menu-icon{
       font-size: 25px;
