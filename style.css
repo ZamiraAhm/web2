@@ -36,7 +36,7 @@ body {
     width: 100%;
   }*/
   
-  .top{
+  /*.top{
     text-align: left;
     overflow: hidden;
     display: flex;
@@ -44,7 +44,7 @@ body {
     align-items: center;
     background-color: #c29e31;
     color: #333;
-  }
+  }*/
   
   .logo{
     color: #333;
@@ -63,9 +63,12 @@ body {
     font-size:1.1rem ;
     font-weight:600 ;
   }
+
   .navbar{
     display: flex;
     list-style-type: none;
+    justify-content: center;
+    padding: 0 10px;
   }
   .navbar a{
     color: var(--text-color);
@@ -86,6 +89,8 @@ body {
   .main{
     display: flex;
     text-align: center;
+    justify-content:right ;
+    top: 10px;
   }
   .main a{
     margin-right: 10px;
@@ -201,7 +206,7 @@ body {
     background-color: rgb(218, 197, 114);
   }
   
-  nav ul {
+  /*nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
