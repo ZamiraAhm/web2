@@ -361,6 +361,22 @@ section{
   border-radius: 30px;
 }
 
+/*About section*/
+.about {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.about .content img{
+  height: auto;
+  width: 200px;
+  max-width: 100%;
+}
+
     /*.display-bottomleft{
       position: absolute; /* Make the text a positioned element */
       /*left: 10px; /* Position the text 10 pixels from the left of the container */
