@@ -4,7 +4,11 @@
     <title>Bistro Restaurant</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <script type="text/javascript" src="script.js"></script>
+    <!--<script type="text/javascript" src="script.js"></script>-->
+    
+
+    <!--swiper css-->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
 </head>
     <!--Navbari-->
     <body>
@@ -114,7 +118,7 @@
              </div>-->
          
 
-             <section class="container">
+             <!--<section class="container">
               <div class="card" id="events">
                 <div class="image">
                   <img src="img/images.jpeg" alt="" />
@@ -143,9 +147,31 @@
                 <h2>Cooking Class</h2>
                 <p> (March 7th, 2 PM): Learn how to make some of our signature dishes with Chef Sarah in a hands-on cooking class.</p>
               </div>
-            </section>
+            </section>-->
 
-         
+         <div class="slide-container swiper">
+               <div class="slide-content">
+                  <div class="card-wrapper swiper-wrapper">
+                      <div class="card swiper-slide">
+                          <div class="image-content">
+                             <span class="overlay"></span>
+                             <div class="card-image">
+                              <img src="img/images.jpeg" alt="" class="card-img">
+                             </div>
+                          </div>
+
+                          <div class="card-content">
+                              <h2 class="name">Wine and Dine Night</h2>
+                              <p class="description">(February 14th, 6-9 PM): Celebrate Valentine's Day with a special three-course meal and wine pairing.</p>
+                              <button class="button">Make Reservation</button>
+                          </div>
+                      </div>
+                  </div>
+               </div>
+               <div class="swipper-button-next"></div>
+               <div class="swipper-button-prev"></div>
+               <div class="swipper-pagination"></div>
+         </div>
        
         
 
@@ -198,5 +224,25 @@
       </div>
     </footer>
     <a href="#" class="scroll-top"><i class="ri-arrow-up-line"></i></a>
+
+    <script src="js/swiper-bundle.min.js"></script>
+
+    ".slide-content"
+  <!--JavaScript-->
+  <script>
+    var swiper = new Swiper(".slide-content", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  
 </body>
+ 
+  <!--Swiper JS-->
+ 
 </html>

@@ -46,5 +46,21 @@ const form = document.getElementById('reservation-form');
           menuIcon.addEventListener('click', () => {
               navMenu.classList.toggle('navbar-active');
           });
-          */
+         
+
+          var swiper = new Swiper(".slide-content",{
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".swipper-button-next",
+              prevEl: ".swipper-button-prev",
+            },
+          }); */
          
