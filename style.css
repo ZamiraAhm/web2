@@ -43,25 +43,28 @@ body {
     background-color: #c29e31;
     color: #333;
   }*/
-
-  .postcard {
-    width: 250px;
-    height: 350px;
-    border: 1px solid black;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 20px;
-    float: left;
-  }
-  .postcard img {
-    width: 100%;
-    height: 200px;
-  }
-  .postcard p {
-    padding: 20px;
-    text-align: center;
-  }
-
+/*events*/
+.postcard {
+  width: 250px;
+  height: 350px;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px;
+  float: left;
+  transition: transform 0.2s;
+}
+.postcard:active {
+  transform: translateY(3px);
+}
+.postcard img {
+  width: 100%;
+  height: 200px;
+}
+.postcard p {
+  padding: 20px;
+  text-align: center;
+}
   header{
     display: flex;
     justify-content: space-between;
