@@ -143,6 +143,8 @@ body {
     margin: 10px;
     padding-left: 50px;
   }
+
+  /*Kjo eshte per responsive*/
   @media(max-width:1280px){
     header{
       padding: 14px 2%;
@@ -159,10 +161,10 @@ body {
     }
     .navbar{
       position: absolute;
-      top: 100%;
+      top: 5%;
       right: 2%;
       width: 270px;
-      height: 29vh;
+      height: 35vh;
       background: rgb(220, 166, 86);
       display: flex;
       flex-direction: column;
@@ -170,7 +172,25 @@ body {
       border-radius: 10px;
       transition: all .50s ease;
     }
+    .navbar a{
+      display: block;
+      margin: 12px 0;
+      padding: 0px 25px;
+      transition: all .50s ease;
+    }
+    .navbar a:hover{
+      color: white;
+      transform: translateY(5px);
+    }
+    .navbar a:active  {
+      color: bisque;
   }
+  .navbar.open{
+    right: 2%;
+  }
+}
+  
+ 
   /*.display-bottomleft{
     position: absolute; /* Make the text a positioned element */
     /*left: 10px; /* Position the text 10 pixels from the left of the container */
