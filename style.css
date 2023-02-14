@@ -59,11 +59,11 @@ body {
     border-radius: 25px;
   }
   ::-webkit-scrollbar-thumb {
-    background: #6e93f7;
+    background: #333;
     border-radius: 25px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #4070f4;
+    background: rgb(220, 166, 86);
   }
   .container {
     display: flex;
@@ -95,7 +95,7 @@ body {
     height: 150px;
     width: 150px;
     padding: 4px;
-    background: #4070f4;
+    background: #333;
     border-radius: 50%;
   }
   .image img {
@@ -282,6 +282,7 @@ body {
       }
       .navbar a:active  {
         color: bisque;
+        top: 100%;
     }
     .navbar.open{
       right: 2%;
@@ -299,8 +300,8 @@ section{
   background-image: url(../web2/img/pasta.png);
   background-size: cover;
   background-position: center;
-  width: 1519px;
-  height: 800px;
+ /* width: 1519px;
+  height: 800px;*/
   align-items: center;
   justify-content: flex-start;
   display: flex;
@@ -333,7 +334,20 @@ section{
 .btn:hover{
     background-color:rgb(220, 166, 86); 
 }
- 
+.scroll-top{
+  position: fixed;
+  bottom: 2.3rem;
+  right: 2.3rem;
+
+}
+.scroll-top i{
+  background-color: #333;
+  color: #ccc;
+  font-size: 10px;
+  padding: 12px;
+  border-radius: 30px;
+}
+
     /*.display-bottomleft{
       position: absolute; /* Make the text a positioned element */
       /*left: 10px; /* Position the text 10 pixels from the left of the container */

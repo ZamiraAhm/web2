@@ -230,7 +230,15 @@
             document.getElementById('phone-error')}
           });
      </script>
-    
+    <script>
+      let menu = document.querySelector('#menu-icon');
+      let navbar = document.querySelector('.navbar');
+
+      menu.onclick = () =>{
+        menu.classList.toggle('bx-x');
+        navbar.classList.toggle('active');
+      }
+    </script>
      <br>
      <footer>
       <div>
@@ -238,5 +246,6 @@
         <p>Address: 123 Main Street, Anytown, Rome</p>
       </div>
     </footer>
+    <a href="#" class="scroll-top"><i class="ri-arrow-up-line"></i></a>
 </body>
 </html>
