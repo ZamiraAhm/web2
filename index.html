@@ -4,7 +4,11 @@
     <title>Bistro Restaurant</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <script type="text/javascript" src="script.js"></script>
+    <!--<script type="text/javascript" src="script.js"></script>-->
+    
+
+    <!--swiper css-->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
 </head>
     <!--Navbari-->
     <body>
@@ -145,10 +149,10 @@
               </div>
             </section>-->
 
-         <div class="slide-container">
+         <div class="slide-container swiper">
                <div class="slide-content">
-                  <div class="card-wrapper">
-                      <div class="card">
+                  <div class="card-wrapper swiper-wrapper">
+                      <div class="card swiper-slide">
                           <div class="image-content">
                              <span class="overlay"></span>
                              <div class="card-image">
@@ -164,6 +168,9 @@
                       </div>
                   </div>
                </div>
+               <div class="swipper-button-next"></div>
+               <div class="swipper-button-prev"></div>
+               <div class="swipper-pagination"></div>
          </div>
        
         
@@ -217,5 +224,25 @@
       </div>
     </footer>
     <a href="#" class="scroll-top"><i class="ri-arrow-up-line"></i></a>
+
+    <script src="js/swiper-bundle.min.js"></script>
+
+    ".slide-content"
+  <!--JavaScript-->
+  <script>
+    var swiper = new Swiper(".slide-content", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  
 </body>
+ 
+  <!--Swiper JS-->
+ 
 </html>

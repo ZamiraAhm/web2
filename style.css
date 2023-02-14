@@ -45,6 +45,12 @@ body {
   }*/
   /* Import Google font - Poppins */
   
+  .slide-container{
+    max-width: 1120px;
+    width: 100%;
+    background-color: grey;
+    padding: 40px;
+  }
 
   .slide-content{
      margin: 0 100px;
@@ -68,6 +74,7 @@ body {
     position: relative;
     row-gap: 5px;
     border-radius: 25px 25px 0 25px;
+    padding: 25px 0;
   }
 
   .overlay{
@@ -88,12 +95,12 @@ body {
     position: absolute;
     height: 40px;
     width: 40px;
-    background-color: red;
+    background-color: #4070F4;
   }
    
   .overlay::after{
     border-radius: 0 25px 0 0;
-    background-color: #265df2;
+    background-color: #fff;
   }
 
    .card-image{ 
