@@ -518,4 +518,6 @@ section{
       height: 50px;
     }
     
-    
+    body{
+      background-color: rgb(228, 200, 159);
+    }
