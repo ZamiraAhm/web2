@@ -472,13 +472,13 @@ section{
   justify-content: center;
   align-items: center;
 }
-.about .content img{
+/*.about .content img{
   height: auto;
   width: 200px;
   max-width: 100%;
 }
 
-    /*.display-bottomleft{
+    .display-bottomleft{
       position: absolute; /* Make the text a positioned element */
       /*left: 10px; /* Position the text 10 pixels from the left of the container */
       /*z-index: 1;
@@ -490,7 +490,7 @@ section{
       color: lightgray;
       font-family:sans-serif;
     }
-    
+     <img src="img/shefi.jpg" >
     hr {
       width: 150%;
       clear: both;
