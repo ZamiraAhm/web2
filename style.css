@@ -461,103 +461,165 @@ section{
   padding: 12px;
   border-radius: 30px;
 }
-.content{
-  position: absolute;
-  justify-content: center;
-  text-align: center;
-  margin-left: 200px;
-  margin-right: -550px;
-}
-.about{
-  position: absolute;
-}
-.about,
-.center{
-  color: #333;
-  font-family: 'Open Sans';
-}
 
-.about h3{
-  font-family: 'Open Sans';
+/*About*/
+.about{
+  height: 100vh;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.about h2{
+.abouttext{
+  width: 600px;
+  max-width: 100%;
+  padding: 0 10px;
+}
+.content{
+  width: 1290px;
+  max-width: 95%;
+  margin: 0 auto;
+  display:flex ;
+  flex-wrap:wrap ;
+  align-items: center;
+  justify-content: space-around;
+  
+
+}
+.abouttext h2{
   margin-top: 150px;
   color: #a16a3d;
   font-size: 35px;
+  font-family: 'Open Sans';
 }
-.about p{
+.abouttext p{
   font-size: 50px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-/*menyja
- .display-bottomleft{
-      position: absolute;  
-      left: 10px; 
-      z-index: 1;
-      color: white;
-      bottom: 10px;
-      left: 10px;
-      font-size: 3em;
-      display: flex;
-      color: lightgray;
-      font-family:sans-serif;
-    }
+.abouttext h3{
+  font-family: 'Open Sans';
+}
 
-    hr {
-      width: 150%;
-      clear: both;
-      margin-top: 40px;
-    }
-    
-    
-    .row-padding{
-      display: flex;
-      padding-top: 10px;
-      padding-left: 40px;
-    }
-    */
-  
-   .menutext{
-    margin-top: 750px;
-   }
-    
-    .menutext ul{
-        list-style: none; /* Remove the default list styling */
-    }
-     
-    
-    .menutext li{
-      font-family: 'Open Sans';
-    }
- 
-    hr {
-      width: 150%;
-      clear: both;
-      margin-top: 40px;
-    }
-    /*nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: flex-end;
-    }
-    
-      .menu li {
-      display: inline-block; 
-    }
-    nav li {
-      margin: 0 20px;
-    }
-    
-    nav a {
-      display: block;
-      padding: 10px;
-      border: 1px solid #333;
-      color: #333;
-      text-decoration: none;
-      text-align: center;
-    }
+hr{
+  border: black 1px;
+}
+
+/*Menu*/
+hr {
+  border: none;
+  border-top: 1px solid black;
+  margin: 5px 0;
+}
+
+
+.menu{
+  max-width: 1200px;
+  margin: 100px auto;
+  margin-top: 300px;
+}
+
+.section-title{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2{
+  text-transform: capitalize;
+  font-size: 35px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.section-title h2::before{
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background-color: #265df2;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menus{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.menu-column{
+  width: calc(33.33% - 20px);
+  margin-right: 20px;
+}
+
+.menu-column:last-of-type {
+  margin-right: 0;
+}
+
+.menu-column h4{
+  text-transform: capitalize;
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.menu-column h4::before{
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: #265df2;
+  bottom: 0;
+}
+
+.single-menu{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.single-menu img{
+  height: 95px;
+  width: 95px;
+  border-radius: 50%;
+  max-width: 110px;
+  border: 1px dashed #ddd;
+  padding: 3px;
+  margin-right: 15px;
+}
+
+.single-menu .menu-content h5{
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: 500;
+  border-bottom: 1px dashed #222;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.single-menu .menu-content h5 span{
+  color: tomato;
+  float: right;
+  font-weight: 600;
+  font-style: italic;
+
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px){
+  .menu-column{
+    width: calc(50% - 20px);
+  }
+}
+
+@media only screen and (max-width: 991px){
+  .menu-column{
+    width: 100%;
+    margin-right: 0;
+  }
+}
     
     /*contact*/
     
