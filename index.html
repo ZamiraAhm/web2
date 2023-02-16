@@ -3,9 +3,10 @@
 <head>
     <title>Bistro Restaurant</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/home.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!--<script type="text/javascript" src="script.js"></script>-->
-    
+    <script src="script.js"></script>
 
     <!--swiper css-->
     <link rel="stylesheet" href="swiper-bundle.min.css">
@@ -34,6 +35,8 @@
           <h1>Welcome to Bueno Bistro</h1>
           <p>Order now. Deliveryy to any corner of the city for free.</p>
           <a href="#" class="btn">Order your meal</a>
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
         </div>
        </section>
     <!--Kontenti -->
@@ -141,89 +144,56 @@
       </section>
         <hr>
                
-        <!-- <h1 class="center">Upcoming events</h1><br>
-          
-             <div class="postcard">
-               <img src="img/images.jpeg" alt="Image 1">
-               <p>Wine and Dine Night (February 14th, 6-9 PM): Celebrate Valentine's Day with a special three-course meal and wine pairing.</p>
-             </div>
-             <div class="postcard">
-               <img src="img/mysafir.jpeg" alt="Image 2">
-               <p>Chef's Table (February 21st, 6 PM): Join us for an intimate dining experience with Chef Sarah as she prepares a four-course meal right in front of you.</p>
-             </div>
-             <div class="postcard">
-               <img src="img/brunch.png" alt="Image 3">
-               <p>Sunday Brunch (February 27th, 11 AM - 2 PM): Enjoy a relaxing brunch with live music and unlimited mimosas.</p>
-             </div>
-             <div class="postcard">
-               <img src="img/shef.webp" alt="Image 4">
-               <p>Cooking Class (March 7th, 2 PM): Learn how to make some of our signature dishes with Chef Sarah in a hands-on cooking class.</p>
-             </div>
-             <div class="postcard">
-               <img src="img/karaoke1.jpg" alt="Image 5">
-               <p>Karaoke Night (March 13th, 5 PM): Sing your heart out with friends and enjoy a special menu of appetizers and drinks..</p>
-             </div>-->
-         
-
-             <!--<section class="container">
-              <div class="card" id="events">
-                <div class="image">
-                  <img src="img/images.jpeg" alt="" />
-                </div>
-                <h2>Wine and Dine Night</h2>
-                <p>(February 14th, 6-9 PM): Celebrate Valentine's Day with a special three-course meal and wine pairing.</p>
-              </div>
-              <div class="card">
-                <div class="image">
-                 <img src="img/mysafir.jpeg" alt="" />
-                </div>
-                <h2>Chef's Table </h2>
-                <p>(February 21st, 6 PM): Join us for an intimate dining experience with Chef Sarah as she prepares a four-course meal right in front of you.</p>
-              </div>
-              <div class="card">
-                <div class="image">
-                  <img src="img/brunch.png" alt="" />
-                </div>
-                <h2>Sunday Brunch</h2>
-                <p>(February 27th, 11 AM - 2 PM): Enjoy a relaxing brunch with live music and unlimited mimosas.</p>
-              </div>
-              <div class="card">
-                <div class="image">
-                  <img src="img/shef.webp" alt="" />
-                </div>
-                <h2>Cooking Class</h2>
-                <p> (March 7th, 2 PM): Learn how to make some of our signature dishes with Chef Sarah in a hands-on cooking class.</p>
-              </div>
-            </section>
-
-         <div class="slide-container swiper">
-               <div class="slide-content">
-                  <div class="card-wrapper swiper-wrapper">
-                      <div class="card swiper-slide">
-                          <div class="image-content">
-                             <span class="overlay"></span>
-                             <div class="card-image">
-                              <img src="img/images.jpeg" alt="" class="card-img">
-                             </div>
-                          </div>
-
-                          <div class="card-content">
-                              <h2 class="name">Wine and Dine Night</h2>
-                              <p class="description">(February 14th, 6-9 PM): Celebrate Valentine's Day with a special three-course meal and wine pairing.</p>
-                              <button class="button">Make Reservation</button>
-                          </div>
-                      </div>
-                  </div>
-               </div>
-               <div class="swipper-button-next"></div>
-               <div class="swipper-button-prev"></div>
-               <div class="swipper-pagination"></div>
-         </div>
-       
         
+          <!--Event Section-->
+        
+        <div class="slidshow-container">
+          <h1>Upcoming events</h1>
+          <div class="slide ">
+            <img class="sliderImages" src="img/logo.20230131-194821">
+          </div>
+          <div class="slide ">
+            <img class="sliderImages" src="img/mysafir.jpeg">
+          </div>
+          <div class="slide ">
+            <img class="sliderImages" src="img/ey.png">
+          </div>
+          <a class="prev" id="prev">&#10094;</a>
+          <a class="next" id="next">&#10095;</a>
+        </div>
+        <script>
+          // JS Slider
+          var index = 1;
+          showSlides(index);
 
+          console.log(document.getElementById("next"));
+          document.getElementById("next").addEventListener("click", function (event) {
+          event.preventDefault();
+          showSlides(index += 1);
+          });
+          document.getElementById("prev").addEventListener("click", function (event) {
+          event.preventDefault();
+          showSlides(index -= 1);
+          });
+
+          function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("slide");
+
+          if (n > slides.length) {
+          index = 1;
+          }
+          if (n < 1) {
+          index = slides.length
+          }
+          for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+          }
+          slides[index - 1].style.display = "block";
+          }
+        </script>
         <hr>
-        Contact
+        <!--Contact
         <div class="contactus" id="contact">
             <h1 class="contact">Contact</h1><br>
             <p>We offfer full-service for any type of event. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
@@ -274,13 +244,27 @@
 
     <script src="js/swiper-bundle.min.js"></script>
 
-    ".slide-content"
-JavaScript
+   
   <script src="swiper-bundle.min.js"></script>
   <script src="script.js"></script>
--->
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+        const swiper = new Swiper('.slide-container', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+          });
+  </script>
 </body>
  
-  <!--Swiper JS-->
- 
+ Swiper JS-->
+</body>
 </html>

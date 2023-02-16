@@ -46,7 +46,7 @@ const form = document.getElementById('reservation-form');
           menuIcon.addEventListener('click', () => {
               navMenu.classList.toggle('navbar-active');
           });
-         
+       
 
           var swiper = new Swiper(".slide-content",{
             slidesPerView: 3,
@@ -62,20 +62,27 @@ const form = document.getElementById('reservation-form');
               nextEl: ".swipper-button-next",
               prevEl: ".swipper-button-prev",
             },
-          }); */
-          var swiper = new Swiper(".slide-content",{
-            slidesPerView: 3,
-            spaceBetween: 30,
-            slidesPerGroup: 3,
+          });  */
+      
+          const swiper = new Swiper('.slide-container', {
+            direction: 'horizontal',
             loop: true,
-            loopFillGroupWithBlank: true,
+            slidesPerView: 1,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+              delay: 5000,
+              disableOnInteraction: false,
+            },
             pagination: {
-              el: ".swiper-pagination",
+              el: '.swiper-pagination',
               clickable: true,
             },
             navigation: {
-              nextEl: ".swipper-button-next",
-              prevEl: ".swipper-button-prev",
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
             },
-          }); 
+          });
+          
+          
          
