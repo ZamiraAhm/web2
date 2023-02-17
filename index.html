@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/home.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bilbo&display=swap" rel="stylesheet">
     <!--<script type="text/javascript" src="script.js"></script>-->
     <script src="script.js"></script>
 
@@ -20,7 +22,7 @@
                         <li><a href="#about" >About </a></li>
                         <li><a href="#menu" >Menu</a></li>
                         <li><a href="#events">Events</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#reservation">Reservation</a></li>
                     </ul>
                     <div class="main">
                         <a href="#" class="user"><i class="ri-user-3-line">Sign In</i></a>
@@ -152,18 +154,22 @@
           <div class="slide " id="events">
             <img class="sliderImages" src="img/wine.png">
             <p>Wine and Dine Night (February 14th, 6-9 PM):Join us for a romantic evening at our restaurant on February 14th from 6-9 PM. We're celebrating Valentine's Day with our Wine and Dine Night, featuring a special three-course meal and wine pairing. You and your loved one can enjoy a delectable culinary experience with dishes crafted by our skilled chefs, paired with perfectly matched wines. Take in the cozy and intimate atmosphere as you toast to love with a glass of fine wine. Don't miss the chance to create a special memory with your special someone.Reserve your table now!</p>
+            <button type="submit" class="btn1" id="reservation">Make Reservation</button>
           </div>
           <div class="slide ">
             <img class="sliderImages" src="img/prov3.jpg">
             <p>Join us at our restaurant for a special event on February 21st at 6 PM - Chef's Table with Chef Joseph. Enjoy an intimate dining experience as Chef Joseph prepares a four-course meal right in front of you using the finest ingredients. You'll have the opportunity to ask questions and learn more about the art of cooking, while savoring carefully selected wine pairings. Don't miss this exceptional evening of food, wine, and conversation.Reserve your table now!</p>
+            <button type="submit" class="btn1">Make Reservation</button>
           </div>
           <div class="slide ">
             <img class="sliderImages" src="img/brunch.png">
             <p>Sunday Brunch (February 27th, 11 AM - 2 PM):Join us for our Sunday Brunch , featuring live music and unlimited mimosas. Enjoy a relaxed atmosphere, delicious food, and refreshing drinks, all while being serenaded by our talented musician. Come unwind and recharge with us this Sunday! Reserve your table now!</p>
+            <button type="submit" class="btn1">Make Reservation</button>
           </div>
           <div class="slide ">
             <img class="sliderImages" src="img/llajv.jpg">
             <p>Join us on Saturday, March 12th for a night of live music at our restaurant! We're excited to feature The Groove Kings, a talented funk and soul band that will provide an entertaining performance while you enjoy our delicious food and drinks. Don't miss out on a night of great food, drinks, and music! Reserve your table now!</p>
+            <button type="submit" class="btn1">Make Reservation</button>
           </div>
           <a class="prev" id="prev">&#10094;</a>
           <a class="next" id="next">&#10095;</a>
@@ -208,7 +214,7 @@
             <p>You can also contact us by phone <strong>049 123 456 - 044 123 456 </strong>or <strong> bistrorestaurant@gmail.com</strong>, or you can send us a message here:</p>
            
         </div>
-       Form
+       
        <form id="reservation-form">
         <label for="name">Name:</label><br>
         <input type="text" id="name" required><br>
@@ -238,17 +244,47 @@
         <input type="text" name="msg" id="msg"><br>
         
         <button type="submit">Make Reservation</button>
-      </form>
+      </form>-->
       
-    
+      
      <br>
-     <footer>
+     
+     <form id="reservation">
+      <h1>Reservation</h1>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+      
+      <label for="num-people">Number of People:</label>
+      <input type="number" id="num-people" name="num-people" min="1" max="10" required>
+      
+      <label for="occasion">Occasion:</label>
+      <input type="text" id="occasion" name="occasion" required>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+      
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" required>
+
+      <label for="confirmation">Confirmation:</label>
+      <select id="confirmation" name="confirmation">
+        <option value="phone">Phone</option>
+        <option value="text">Text Message</option>
+      </select>
+      
+      <button type="submit">Make Reservation</button>
+    </form>
+    
+     <!--<footer>
       <div>
         <p>Copyright 2021 Restaurant FIFA Bistro</p>
         <p>Address: 123 Main Street, Anytown, Rome</p>
       </div>
     </footer>
-    <a href="#" class="scroll-top"><i class="ri-arrow-up-line"></i></a>
+    <a href="#" class="scroll-top"><i class="ri-arrow-up-line"></i></a>-->
 
     <script src="js/swiper-bundle.min.js"></script>
 
@@ -273,6 +309,5 @@
   </script>
 </body>
  
- Swiper JS-->
 </body>
 </html>

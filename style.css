@@ -306,9 +306,6 @@ section{
   font-family: 'Open Sans';
 }
 
-hr{
-  border: black 1px;
-}
 
 /*Menu*/
 hr {
@@ -426,50 +423,7 @@ hr {
     margin-right: 0;
   }
 }
-    /*kontakti regjistrimi*/
-    form {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
     
-    label {
-      font-size: 12px;
-      font-weight: 600;
-      margin-bottom: 5px;
-      color: #333;
-    }
-    
-    input[type="text"],
-    input[type="email"],
-    input[type="number"],
-    input[type="date"],
-    input[type="time"] {
-      width: 100%;
-      padding: 10px;
-      margin: 5px 0;
-      box-sizing: border-box;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-      font-size: 14px;
-    }
-    
-    button[type="submit"] {
-      width: 100%;
-      background-color: #333;
-      color: white;
-      padding: 10px;
-      border: none;
-      border-radius: 3px;
-      cursor: pointer;
-      font-size: 14px;
-      font-weight: 600;
-      width: 100%;
-    }
-    button:hover{
-      background-color: rgb(220, 166, 86);
-      border: 2px solid rgb(0, 0, 0);
-    }
      
     /*footer*/
     
@@ -487,7 +441,7 @@ hr {
       background-color: rgb(228, 200, 159);
       
     }
- 
+ /*slideri*/
     .slidshow-container h1{
       text-transform: capitalize;
       font-size: 30px;
@@ -520,4 +474,170 @@ hr {
       box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
       border-style: double;
     }
+  /*contact*/
+  /*kontakti regjistrimi
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  label {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  input[type="date"],
+  input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    width: 100%;
+  }
+  button:hover{
+    background-color: rgb(220, 166, 86);
+    border: 2px solid rgb(0, 0, 0);
+  }
+  /* Style for Reservation section */
+  
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="text"],
+  input[type="date"],
+  input[type="time"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+    background-color: #f8f8f8;
+  }
+  
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="text"],
+  input[type="date"],
+  input[type="time"] {
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  select {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #555;
+    background-color: #f8f8f8;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+  }
+  
+  select:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  button[type="submit"] {
+    background-color: #b4966f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 15px 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 150px;
     
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #725c3b;
+    transform: translateY(-2px);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  button[type="submit"]:focus {
+    outline: none;
+  }
+  
+  form h1{
+    font-family: 'Bilbo', cursive;
+    text-align: center;
+    margin-top: 10px;
+    
+  }
+  form{
+    margin-top: 230px;
+    font-size: 30px;
+    width: 500px;
+  }
+  .btn1 {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn1:hover {
+    background-color: #3e8e41;
+    float: right;
+  }
+  
