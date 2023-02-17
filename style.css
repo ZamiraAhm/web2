@@ -509,3 +509,15 @@ hr {
       transform: translateX(-50%);
     }
     
+    .slidshow-container p {
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #555;
+      background-color: #f9f9f9;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+      border-style: double;
+    }
+    
