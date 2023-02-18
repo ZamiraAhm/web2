@@ -1,18 +1,30 @@
-
 <header>
-            <a href="#home" class="logo"><i class="ri-restaurant-2-fill"></i><span>Bueno Bistro</span></a>
-                    <ul class="navbar">
-                        <li><a href="#home" class="bar-item-btn">Home</a></li> 
-                        <li><a href="#about" >About </a></li>
-                        <li><a href="#menu" >Menu</a></li>
-                        <li><a href="#events">Events</a></li>
-                        <li><a href="#reservation">Reservation</a></li>
-                    </ul>
-                    <div class="main">
-                    
-                        <div class="bx bx-menu" id="menu-icon"><i class="ri-menu-line"></i></div>
-                    </div>
-                
+    <nav>
+        <div>
+            <a href="index.php">  </a>
+        </div>
+        <div class="navLeft">
+            <ul class="nav_links">
+                <li>
+                    <a href="index.php">Home</a>
+                </li>
+                <li>
+                    <a href="about.php">About</a>
+                </li>
+                <li>
+                    <a href="menu.php">Menu</a>
+                </li>
+                <li>
+                    <a href="event.php">Event</a>
+                </li>
+                <li>
+                    <a href="reservation.php">Reservation</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navRight">
+            <ul class="nav_buttons">
+
 
 
                 <?php
@@ -33,7 +45,7 @@
                 <?php
                 if (!(isset($_SESSION['role']))) {
                 ?>
-                    <li><a href="./views/login.php" class="btn" id="btn_kyqu">Kyqu</a></li>
+                    <li><a href="./views/login.php" class="btn" id="btn_kyqu">Log in</a></li>
                 <?php
                 }
                 ?>
