@@ -21,6 +21,7 @@
   $mapper = new aboutMapper();
   $strings = $mapper->getAllInfo();
   ?>
+  <main>
  <section class="about">
           <div class="main" id="about">
               <div class="abouttext">
@@ -34,6 +35,7 @@
           </div>
          </div>
         </section>
+</main>
   <?php
   include "components/footer.php";
   ?>
