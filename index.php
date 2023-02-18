@@ -19,6 +19,7 @@
   <?php
   include "components/header.php";
   ?>
+  <main>
   <section class="home">
   
         <div class="home-text">
@@ -30,6 +31,7 @@
 
         </div>
        </section>
+</main>
   <?php
   include "components/footer.php";
   ?>

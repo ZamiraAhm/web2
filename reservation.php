@@ -15,6 +15,7 @@
   <?php
   include "components/header.php";
   ?>
+  <main>
   <form id="reservation">
       <h1>Reservation</h1>
       <label for="name">Name:</label>
@@ -43,6 +44,7 @@
       
       <button type="submit">Make Reservation</button>
     </form>
+</main>
   <?php
   include "components/footer.php";
   ?>
