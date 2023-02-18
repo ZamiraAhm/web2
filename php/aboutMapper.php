@@ -1,7 +1,7 @@
 <?php
 require_once "databaseConfig.php";
 
-class aboutUsMapper extends DatabasePDOConfiguration
+class aboutMapper extends DatabasePDOConfiguration
 {
 
     private $conn;
