@@ -1,30 +1,18 @@
-<header>
-    <nav>
-        <div>
-            <a href="index.php"> <img src="images/hopelogo.png" alt="" id="logo" /> </a>
-        </div>
-        <div class="navLeft">
-            <ul class="nav_links">
-                <li>
-                    <a href="index.php">Kreu</a>
-                </li>
-                <li>
-                    <a href="news.php">Lajmet</a>
-                </li>
-                <li>
-                    <a href="products.php">Produktet</a>
-                </li>
-                <li>
-                    <a href="about_us.php">Rreth Nesh</a>
-                </li>
-                <li>
-                    <a href="contact_us.php">Na Kontaktoni</a>
-                </li>
-            </ul>
-        </div>
-        <div class="navRight">
-            <ul class="nav_buttons">
 
+<header>
+            <a href="#home" class="logo"><i class="ri-restaurant-2-fill"></i><span>Bueno Bistro</span></a>
+                    <ul class="navbar">
+                        <li><a href="#home" class="bar-item-btn">Home</a></li> 
+                        <li><a href="#about" >About </a></li>
+                        <li><a href="#menu" >Menu</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#reservation">Reservation</a></li>
+                    </ul>
+                    <div class="main">
+                    
+                        <div class="bx bx-menu" id="menu-icon"><i class="ri-menu-line"></i></div>
+                    </div>
+                
 
 
                 <?php
