@@ -24,8 +24,8 @@
   
         <div class="home-text">
           <h1>Welcome to Bueno Bistro</h1>
-          <p>Order now. Delivery to any corner of the city for free.</p>
-          <a href="#" class="btn">Order your meal</a>
+          <p >Order now. Delivery to any corner of the city for free.</p>
+          <a href="reservation.php" class="btn">Make reservation</a>
           
           <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
