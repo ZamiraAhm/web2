@@ -1,7 +1,7 @@
 <?php
 require_once "databaseConfig.php";
 
-class produktMapper extends DatabasePDOConfiguration
+class menuMapper extends DatabasePDOConfiguration
 {
 
     private $conn;
