@@ -4,7 +4,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Bistro</title>
+  <title>Bueno Bistro</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
   <link rel="stylesheet" href="css/login_register.css">
   <link rel="stylesheet" href="css/header.css" />

@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html >
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HOPE</title>
+  <title>Bueno Bistro</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
   <link rel="stylesheet" href="css/reservation.css" />
   <link rel="stylesheet" href="css/footer.css" />
   <link rel="stylesheet" href="css/nav.css" />
   <link rel="stylesheet" href="css/login_register.css">
- 
+  
 </head>
 
-<body>
+<body >
   <?php
   include "components/header.php";
   ?>
