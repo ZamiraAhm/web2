@@ -15,7 +15,7 @@
                     <a href="menu.php">Menu</a>
                 </li>
                 <li>
-                    <a href="event.php">Event</a>
+                    <a href="events.php">Event</a>
                 </li>
                 <li>
                     <a href="reservation.php">Reservation</a>

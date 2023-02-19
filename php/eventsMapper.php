@@ -1,7 +1,7 @@
 <?php
 require_once "databaseConfig.php";
 
-class newsMapper extends DatabasePDOConfiguration
+class eventsMapper extends DatabasePDOConfiguration
 {
 
     private $conn;
