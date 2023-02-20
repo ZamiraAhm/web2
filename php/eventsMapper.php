@@ -28,15 +28,17 @@ class eventsMapper extends DatabasePDOConfiguration
     }
     public function insertEvents($n, $d, $i, $a)
     {
-        $this->query = "insert into events (name,description,image,added_By) values (:name,:description,:image,:added_By)";
+        $this->query = "insert into events (image,date,time,title,description,added_By) values (:image,:date,:time,:title,:description,:added_By)";
         $statement = $this->conn->prepare($this->query);
-        $name = $n;
-        $decription = $d;
-        $image = $i;
-        $added_By = $a;
-        $statement->bindParam(":name", $name);
-        $statement->bindParam(":description", $description);
+        $image= $i;
+        $date= $d;
+        $time = $t;
+        $title = $l;
+        $description = $d;
         $statement->bindParam(":image", $image);
+        $statement->bindParam(":date", $date);
+        $statement->bindParam(":time", $title);
+        $statement->bindParam(":description", $description);
         $statement->bindParam(":added_By", $added_By);
         $statement->execute();
     }

@@ -31,7 +31,7 @@ class menuMapper extends DatabasePDOConfiguration
     }
     public function insertProduct($n, $d, $p, $i, $a)
     {
-        $this->query = "insert into produktet (name,details,price,image,added_By) values (:name,:details,:price,:image,:added_By)";
+        $this->query = "insert into menu (name,details,price,image,added_By) values (:name,:details,:price,:image,:added_By)";
         $statement = $this->conn->prepare($this->query);
         $statement->bindParam(":name", $n);
         $statement->bindParam(":details", $d);
