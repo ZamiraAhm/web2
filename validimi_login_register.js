@@ -53,7 +53,7 @@ function validateRegister() {
         alert("Your password should be the same as the Confirm Password!");
         return false;
     } else if (!passwordiIsValid(inputLR[4].value)){
-        alert("Your password must fulfill the conditions! \n must be longer than 8 characters \n  at least one number \n at least one Capital letter  ");
+        alert("Your password must fulfill the conditions: \n Must be longer than 8 characters, \n must have at least one number, \n must have at least one capital letter ! ");
         return false;
     }
     
