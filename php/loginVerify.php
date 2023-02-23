@@ -14,6 +14,7 @@ if (isset($_POST['btn-login'])) {
     $register->insertData();
 }
 
+
 class LoginLogic
 {
     private $username = "";
@@ -32,13 +33,17 @@ class LoginLogic
             echo 'emptyvariables';
         }
         if ($this->usernameAndPasswordCorrect($this->username, $this->password)) {
-
-            header("Location:../index.php");
+            if ($_SESSION['role'] == 1) {
+                header("Location:../views/dashboard.php");
+            } else {
+                header("Location:../index.php");
+            }
         } else {
             header("Location:../views/login.php");
             echo 'ERROR';
         }
     }
+
     private function variablesNotDefinedWell($username, $password)
     {
         if (empty($username) || empty($password)) {
@@ -56,19 +61,19 @@ class LoginLogic
             return false;
         } else if (password_verify($password, $user['password'])) {
             if ($user['role'] == 1) {
-                print_r('testrole');
                 $obj = new AdminUser($user['id'], $user['username'], $user['email'], $user['password']);
-                print_r($obj);
                 $obj->setSession();
             } else {
                 $obj = new SimpleUser($user['id'], $user['username'], $user['email'], $user['password']);
                 $obj->setSession();
             }
             return true;
-        } else
+        } else {
             return false;
+        }
     }
 }
+
 class RegisterLogic
 {
     private $username = "";
