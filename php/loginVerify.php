@@ -1,5 +1,5 @@
 <?php
-include_once 'adminUser.php';
+include_once 'AdminUser.php';
 include_once 'simpleUser.php';
 require_once 'userMapper.php';
 session_start();
@@ -51,17 +51,17 @@ class LoginLogic
     {
         $mapper = new UserMapper();
         $user = $mapper->getUserByUsername($username);
-        $hashUSERPASSWORD = password_hash($user['password'], PASSWORD_BCRYPT);
+        $hashUSERPASSWORD = $user['password'];
         if ($user == null || count($user) == 0) {
             return false;
         } else if (password_verify($password, $user['password'])) {
             if ($user['role'] == 1) {
                 print_r('testrole');
-                $obj = new AdminUser($user['user_id'], $user['username'], $user['email'], $user['password']);
+                $obj = new AdminUser($user['id'], $user['username'], $user['email'], $user['password']);
                 print_r($obj);
                 $obj->setSession();
             } else {
-                $obj = new simpleUser($user['user_id'], $user['username'], $user['email'], $user['password']);
+                $obj = new SimpleUser($user['id'], $user['username'], $user['email'], $user['password']);
                 $obj->setSession();
             }
             return true;
@@ -90,7 +90,7 @@ class RegisterLogic
             header("Location:../views/login.php");
             echo 'emptyvariables';
         } else {
-            $user = new simpleUser($this->username, $this->password, $this->email, 0);
+            $user = new SimpleUser($this->username, $this->password, $this->email, 0);
             $mapper = new UserMapper();
             $mapper->insertUser($user);
             header("Location:../index.php");

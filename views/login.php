@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/login_register.css">
     <title>Login</title>
-    <?php include '../php/loginverify.php' ?>
+    <?php include '../php/loginVerify.php' ?>
 </head>
 
 <body>
@@ -22,7 +23,7 @@
             <button id="btn-register">Register</button>
         </div>
 
-        <form id="form-login" action="../php/loginverify.php" method="POST" onsubmit="return validate()">
+        <form id="form-login" action="../php/loginVerify.php" method="POST" onsubmit="return validate()">
             <div class="login forms form-style ">
                 <label for="">Username:</label>
                 <input type="text" name="username" class="input input-field" placeholder="username..." />
@@ -32,7 +33,7 @@
             </div>
         </form>
 
-        <form id="form-reg" action="../php/loginverify.php" method="POST" onsubmit="return validateRegister()">
+        <form id="form-reg" action="../php/loginVerify.php" method="POST" onsubmit="return validateRegister()">
             <div class="register forms hidden">
                 <label for="">Username:</label>
                 <input type="text" name="username" class="input input-field" placeholder="username..." />
