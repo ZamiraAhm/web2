@@ -61,7 +61,7 @@ class LoginLogic
                 print_r($obj);
                 $obj->setSession();
             } else {
-                $obj = new SimpleUser($user['user_id'], $user['username'], $user['email'], $user['password']);
+                $obj = new simpleUser($user['user_id'], $user['username'], $user['email'], $user['password']);
                 $obj->setSession();
             }
             return true;
@@ -90,7 +90,7 @@ class RegisterLogic
             header("Location:../views/login.php");
             echo 'emptyvariables';
         } else {
-            $user = new SimpleUser($this->username, $this->password, $this->email, 0);
+            $user = new simpleUser($this->username, $this->password, $this->email, 0);
             $mapper = new UserMapper();
             $mapper->insertUser($user);
             header("Location:../index.php");
