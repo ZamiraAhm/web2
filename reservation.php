@@ -37,11 +37,11 @@
       <label for="time">Time:</label>
       <input type="time" id="time" name="time" required>
 
-      <label for="confirmation">Confirmation:</label>
+      <!--<label for="confirmation">Confirmation:</label>
       <select id="confirmation" name="confirmation">
         <option value="phone">Phone</option>
         <option value="text">Text Message</option>
-      </select>
+      </select>-->
       
       <button type="submit">Make Reservation</button>
     </form>

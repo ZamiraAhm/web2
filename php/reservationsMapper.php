@@ -21,7 +21,8 @@ class reservationsMapper extends DatabasePDOConfiguration
     }
     public function insertMessage($n, $pn, $nop, $o, $d, $t)
     {
-        $this->query = "insert into messages (name,phone_number,number_of_people,occasion,date,time) values (:name,:phone_number,:number_of_people,:occasion,:date,:time)";
+        $this->query = "insert into reservations (name,phone_number,number_of_people,occasion,date,time) values (:name,:phone_number,:number_of_people,:occasion,:date,:time)";
+
         $statement = $this->conn->prepare($this->query);
         $name = $n;
         $phone_number = $pn;
