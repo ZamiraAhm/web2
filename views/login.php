@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/login_register.css">
     <title>Login</title>
-    <?php include '../php/loginVerify.php' ?>
+    <?php include '../php/loginVerify.php'; 
+    include '../php/variables.php'?>
+
 </head>
 
 <body>
