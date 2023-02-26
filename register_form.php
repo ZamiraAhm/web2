@@ -44,6 +44,7 @@ if(isset($_POST['submit'])){
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/register.css">
+   <link rel="stylesheet" href="css/footer.css">
 
 </head>
 <body>
@@ -72,6 +73,8 @@ if(isset($_POST['submit'])){
    </form>
 
 </div>
-
+<?php
+  include "components/footer.php";
+  ?>
 </body>
 </html>

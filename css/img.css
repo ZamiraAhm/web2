@@ -39,7 +39,7 @@ background-color: transparent;
 
 .btn {
   padding: 20px 35px;
-  background-color: #7C8C3C;
+  background-color: #7C8C3C;;
   color: white;
   font-size: 14px;
   font-weight: 500;
@@ -50,5 +50,5 @@ background-color: transparent;
 }
 
 .btn:hover {
-  background-color: rgb(220, 166, 86); 
+  background-color: #6a7830;
 }

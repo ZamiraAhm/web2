@@ -5,6 +5,7 @@
 
 session_start();
 
+
 if(isset($_POST['submit'])){
 
    $name = mysqli_real_escape_string($conn, $_POST['name']);
@@ -49,7 +50,7 @@ if(isset($_POST['submit'])){
    <title>login form</title>
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/login_register.css">
+   <link rel="stylesheet" href="css/footer.css">
    <link rel="stylesheet" href="css/login.css">
 
 </head>
@@ -76,7 +77,9 @@ if(isset($_POST['submit'])){
    </form>
 
 </div>
-
+<?php
+  include "components/footer.php";
+  ?>
 
 </body>
 </html>
