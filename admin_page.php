@@ -35,9 +35,7 @@ if(!isset($_SESSION['admin_name'])){
         </div>
         <div class="navLeft">
             <ul class="nav_links">
-                <li>
-                    <a href="index.php">Home</a>
-                </li>
+                
                 <li>
                     <a href="reservation_dashboard.php">Admin Page </a>
                 </li>
