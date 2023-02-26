@@ -20,6 +20,7 @@ if(!isset($_SESSION['admin_name'])){
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/login_register.css">
+   <link rel="stylesheet" href="css/stili.css">
 
 </head>
 <body>
@@ -27,16 +28,16 @@ if(!isset($_SESSION['admin_name'])){
 <div class="container">
 
    <div class="content">
-      <h3>hi, <span>admin</span></h3>  
-      <h1>welcome <span><?php echo $_SESSION['admin_name'] ?></span></h1>
-      <p>this is an admin page</p>
-      <a href="add_event.php" class="btn">Add Event</a>
-      <a href="add_menu_form.php" class="btn">Add Menu</a>
-      <a href="login_form.php" class="btn">login</a>
-      <a href="register_form.php" class="btn">register</a>
-      <a href="logout.php" class="btn">logout</a>
-   </div>
-
+   <header>
+  <h1 class="logo">Admin Page</h1>
+  <nav class="navigation">
+    <a href="admin_page.php#">Home</a>
+    <a href="add_event.php">Events</a>
+    <a href="add_menu_form.php">Menus</a>
+    <a href="logout.php">Logout</a>
+  </nav>
+</header>
+</div>
 
 </body>
 </html>
