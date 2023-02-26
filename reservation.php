@@ -1,23 +1,5 @@
-<?php
-$host = 'localhost';
-$dbname = 'projekti';
 
 
-// Create a PDO instance
-try {
-  $pdo = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);
-  // Set PDO to throw exceptions on error
-  $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch(PDOException $e) {
-  echo "Connection failed: " . $e->getMessage();
-}
-
-// Example query
-$stmt = $pdo->query("SELECT * FROM reservations");
-while ($row = $stmt->fetch()) {
-  echo $row['name'] . "\n";
-}
-?>
 
 <!DOCTYPE html>
 <html >
@@ -37,8 +19,43 @@ while ($row = $stmt->fetch()) {
   <?php
   include "components/header.php";
   ?>
+    <?php
+  // Database connection code
+  $servername = "localhost";
+  $username = "root";
+  $password = "";
+  $dbname = "projekti";
+
+  // Create a connection
+  $conn = new mysqli($servername, $username, $password, $dbname);
+
+  // Check connection
+  if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+  }
+
+  // Handle form submission
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get the form data
+    $name = $_POST["name"];
+    $phone_number = $_POST["phone"];
+    $number_of_people = intval($_POST["number_of_people"]);
+    $occasion = $_POST["occasion"];
+    $date = $_POST["date"];
+    $time = $_POST["time"];
+
+    // Insert the data into the database
+    $sql = "INSERT INTO reservations (name, phone_number, number_of_people, occasion, date, time) VALUES ('$name', '$phone_number', '$number_of_people', '$occasion', '$date', '$time')";
+
+    if ($conn->query($sql) === TRUE) {
+      echo "Reservation created successfully";
+    } else {
+      echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+  }
+  ?>
   <main>
-  <form id="reservation">
+  <form id="reservation" method="POST" >
       <h1>Reservation</h1>
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
@@ -46,8 +63,8 @@ while ($row = $stmt->fetch()) {
       <label for="phone">Phone Number:</label>
       <input type="tel" id="phone" name="phone" required>
       
-      <label for="num-people">Number of People:</label>
-      <input type="number" id="num-people" name="num-people" min="1" max="10" required>
+      <label for="number_of_people">Number of People:</label>
+      <input type="number" id="number_of_people" name="number_of_people" min="1" max="10" required>
       
       <label for="occasion">Occasion:</label>
       <input type="text" id="occasion" name="occasion" required>
