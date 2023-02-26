@@ -1,6 +1,6 @@
 <?php
 
-    include_once "../config/dbconnect.php";
+    include_once "../php/databaseConfig.php";
     
     $id=$_POST['record'];
     $query="DELETE FROM sizes where size_id='$id'";

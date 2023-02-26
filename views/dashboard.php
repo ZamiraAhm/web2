@@ -207,4 +207,5 @@ if (isset($_SESSION['role']) && $_SESSION['role'] == 1) {
     </html>
 <?php    else {
     header("Location:../index.php");
-} ?>
+}   
+ ?>

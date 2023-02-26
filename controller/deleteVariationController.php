@@ -1,6 +1,6 @@
 <?php
 
-    include_once "../config/dbconnect.php";
+    include_once "../php/databaseConfig.php";
     
     $id=$_POST['record'];
     $query="DELETE FROM product_size_variation where variation_id='$id'";

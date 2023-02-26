@@ -14,7 +14,7 @@
      </tr>
     </thead>
      <?php
-      include_once "../config/dbconnect.php";
+      include_once "../php/databaseConfig.php";";
       $sql="SELECT * from orders";
       $result=$conn-> query($sql);
       

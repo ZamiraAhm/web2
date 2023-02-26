@@ -11,7 +11,7 @@
         </tr>
     </thead>
     <?php
-        include_once "../config/dbconnect.php";
+        include_once "../php/databaseConfig.php";
         $ID= $_GET['orderID'];
         //echo $ID;
         $sql="SELECT * from product_size_variation v, order_details d 

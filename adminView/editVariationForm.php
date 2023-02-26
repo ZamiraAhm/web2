@@ -2,7 +2,7 @@
 
 <h4>Edit Variation Detail</h4>
 <?php
-    include_once "../config/dbconnect.php";
+    include_once "../php/databaseConfig.php";
 	$ID=$_POST['record'];
 	$qry=mysqli_query($conn, "SELECT * from product_size_variation Where variation_id='$ID'");
 	$numberOfRow=mysqli_num_rows($qry);

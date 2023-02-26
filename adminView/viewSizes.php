@@ -10,7 +10,7 @@
       </tr>
     </thead>
     <?php
-      include_once "../config/dbconnect.php";
+      include_once "../php/databaseConfig.php";
       $sql="SELECT * from sizes";
       $result=$conn-> query($sql);
       $count=1;
