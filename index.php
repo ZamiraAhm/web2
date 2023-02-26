@@ -24,7 +24,7 @@
   <section class="home">
   
         <div class="home-text">
-          <h1>Welcome to Bueno Bistro</h1>
+          <h1>Welcome to Buenoo Bistro</h1>
           <p >Order now. Delivery to any corner of the city for free.</p>
           <a href="reservation.php" class="btn">Make reservation</a>
           
