@@ -17,6 +17,7 @@ if(!isset($_SESSION['admin_name'])){
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/login_register.css">
    <link rel="stylesheet" href="css/stili.css">
+   <link rel="stylesheet" href="css/eventdash.css">
 
 </head>
 <body>
@@ -54,7 +55,7 @@ if(!isset($_SESSION['admin_name'])){
          <h3>Add New Event</h3>
          <form action="add_event_handler.php" method="post">
             <label for="image">Image:</label>
-            <input type="text" id="image" name="image" required><br><br>
+            <input type="file" id="image" name="image" required><br><br>
 
             <label for="date">Date:</label>
             <input type="date" id="date" name="date" required><br><br>

@@ -19,8 +19,9 @@ body {
   
   table {
     border-collapse: collapse;
-    width: 100%;
-    margin-top: 20px;
+    width: 80%;
+    margin-top: 80px;
+    margin-left: 100px;
   }
   
   th,
@@ -28,10 +29,11 @@ body {
     padding: 8px;
     text-align: left;
     border-bottom: 1px solid #ddd;
+    color: white;
   }
   
   th {
-    background-color: #4CAF50;
+    background-color: #7c8c3c;
     color: white;
   }
   
@@ -77,6 +79,7 @@ body {
   .closebtn:hover {
     color: black;
   }
+
   
   @media screen and (max-width: 600px) {
     table {
@@ -84,3 +87,16 @@ body {
     }
   }
   
+
+
+  button[type='submit'] {
+    border-radius: 5px;
+    background-color: #ff4136; 
+    color: white; 
+    border: none; 
+    padding: 10px;
+  }
+
+  button[type='submit']:hover{
+background-color: #ff0000;
+  }
