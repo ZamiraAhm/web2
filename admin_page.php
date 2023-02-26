@@ -25,19 +25,34 @@ if(!isset($_SESSION['admin_name'])){
 </head>
 <body>
    
-<div class="container">
-
-   <div class="content">
-   <header>
-  <h1 class="logo">Admin Page</h1>
-  <nav class="navigation">
-    <a href="admin_page.php#">Home</a>
-    <a href="add_event.php">Events</a>
-    <a href="add_menu_form.php">Menus</a>
-    <a href="logout.php">Logout</a>
-  </nav>
-</header>
+<header>
+    <nav>
+        <div>
+            <a href="admin_page.php">  </a>
+        </div>
+        <div class="navLeft">
+            <ul class="nav_links">
+                <li>
+                    <a href="index.php">Home</a>
+                </li>
+                <li>
+                    <a href="admin_page.php">Admin Page </a>
+                </li>
+                <li>
+                    <a href="add_event.php">Add Events</a>
+                </li>
+                <li>
+                    <a href="add_menu_form.php">Add Menu</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navRight">
+    <ul class="nav_buttons">
+        
+            <li><a href="php/logout.php" class="btn" id="btn_logout">Log out</a></li>
+    </ul>
 </div>
+</header>
 
 </body>
 </html>
