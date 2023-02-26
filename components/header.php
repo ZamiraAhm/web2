@@ -24,7 +24,7 @@
         </div>
         <div class="navRight">
     <ul class="nav_buttons">
-        <li><a href="./views/login.php" class="btn" id="btn_kyqu">Log in</a></li>
+        <li><a href="./login_form.php" class="btn" id="btn_kyqu">Log in</a></li>
         <?php
         session_start();
         if (isset($_SESSION['role']) && $_SESSION['role'] == 1) {

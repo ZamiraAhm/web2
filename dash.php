@@ -1,7 +1,7 @@
 <?php
 $mysqli = new mysqli("localhost", "username", "password", "projekti");
 
-Check if the login form was submitted
+
 if (isset($_POST['login'])) {
   
   $username = $_POST['zamira'];
