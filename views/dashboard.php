@@ -13,7 +13,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] != 'admin') {
 session_start();
 if (isset($_SESSION['role']) && $_SESSION['role'] == 1) {
     header('Location: /views/dashboard.php');
-    exit();
+    exit();}
 ?>
     <!DOCTYPE html>
     <html lang="en">
@@ -205,6 +205,6 @@ if (isset($_SESSION['role']) && $_SESSION['role'] == 1) {
     </body>
                         <script src="../dashboard.js"></script>
     </html>
-<?php } else {
+<?php    else {
     header("Location:../index.php");
 } ?>
