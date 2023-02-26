@@ -43,11 +43,11 @@ if(isset($_POST['submit'])){
    <title>register form</title>
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/login_register.css">
+   <link rel="stylesheet" href="css/register.css">
 
 </head>
 <body>
-   
+
 <div class="form-container">
 
    <form action="" method="post">

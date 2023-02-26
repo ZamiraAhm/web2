@@ -50,12 +50,12 @@ if(isset($_POST['submit'])){
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/login_register.css">
-   
+   <link rel="stylesheet" href="css/login.css">
 
 </head>
 <body>
 <div class="back-button">
-        <a href="../index.php" id="btn-back">Turn back</a>
+        <a href="../web2/index.php" id="btn-back">Turn back</a>
     </div>
 
 <div class="form-container">
