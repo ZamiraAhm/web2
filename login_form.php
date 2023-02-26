@@ -55,7 +55,10 @@ if(isset($_POST['submit'])){
 
 </head>
 <body>
-   
+<div class="back-button">
+        <a href="../index.php" id="btn-back">Turn back</a>
+    </div>
+
 <div class="form-container">
 
    <form action="" method="post">

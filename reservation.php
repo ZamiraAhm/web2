@@ -1,3 +1,24 @@
+<?php
+$host = 'localhost';
+$dbname = 'projekti';
+
+
+// Create a PDO instance
+try {
+  $pdo = new PDO("mysql:host=$host;dbname=$dbname", $user, $password);
+  // Set PDO to throw exceptions on error
+  $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch(PDOException $e) {
+  echo "Connection failed: " . $e->getMessage();
+}
+
+// Example query
+$stmt = $pdo->query("SELECT * FROM reservations");
+while ($row = $stmt->fetch()) {
+  echo $row['name'] . "\n";
+}
+?>
+
 <!DOCTYPE html>
 <html >
 
