@@ -36,8 +36,9 @@ if(!isset($_SESSION['admin_name'])){
                     <a href="index.php">Home</a>
                 </li>
                 <li>
-                    <a href="admin_page.php">Admin Page </a>
+                    <a href="reservation_dashboard.php">Admin Page </a>
                 </li>
+
                 <li>
                     <a href="add_event.php">Add Events</a>
                 </li>
